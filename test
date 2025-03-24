@@ -1,0 +1,4 @@
+# get them to enter a dungeon name and there leavel
+
+dungeon = input('Enter the dungeon name: ')
+level = input('Enter the dungeon level: ')

@@ -1,0 +1,19 @@
+'''asks how much pizza you want to oder and then prints your order. skips any pizza that wasnt orderd '''
+
+
+#List of pizza options
+pizzas = ['cheese', 'chicken', 'pepperoni', 'veggie', ]
+#list on how meany pizza 
+amounts = []
+
+#Go though the list
+for pizza in pizzas:
+#Ask how meany of each pizza
+howmeany = int(input (f'how meany {pizza} pizzas do you want? '))
+amounts.append(howmeany)
+
+#loop through all pizza 
+for pizza, amounts in zip(pizzas,amounts):
+    #cheak if amounts is graterthen zero
+    if amounts > 0:
+        print(f'{pizza.capitalize()}: {amounts}')
